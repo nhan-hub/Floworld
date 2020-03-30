@@ -1,0 +1,57 @@
+html{
+	scroll-behavior: smooth;
+	overflow: hidden;
+	background-color:red;
+}
+body{
+	padding:0;
+	margin:0;
+}
+div {
+	display: flex;
+}	
+
+#button{
+	background-color: black; 
+	width:10%;
+	opacity: 25%
+}
+video{
+	width:90vw; 
+	z-index: -1;
+	position:absolute;
+	top:0;
+	left:90vw;
+}
+h1{
+	display: block;
+	font-family: 'Martel', serif;
+	font-size: 60px;
+	color:white;
+	letter-spacing: 20px;
+	font-weight: 200;
+	margin-top:40vh;
+	margin-left:2vw;
+}
+p {
+	display: block;
+	font-family: 'Open Sans', serif;
+	font-size: 15px;
+	color:white;
+	letter-spacing: 1px;
+	margin-top:-5vh;
+	margin-left:2vw;
+	font-weight: 300;
+	width:50%;
+}
+#play{
+	display: block;
+	font-family: 'Open Sans', serif;
+	font-size: 15px;
+	color:white;
+	letter-spacing: 1px;
+	margin-top:-5vh;
+	margin-left:2vw;
+	font-weight: 300;
+	width:50%;
+}
