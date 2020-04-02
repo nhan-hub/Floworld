@@ -1,57 +1,107 @@
 html{
 	scroll-behavior: smooth;
-	overflow: hidden;
-	background-color:red;
+	width: 100%;
+	background-color: black;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 body{
-	padding:0;
-	margin:0;
+}
+*{
+	margin:0px;
+	color:white;
 }
 div {
-	display: flex;
-}	
-
-#button{
-	background-color: black; 
-	width:10%;
-	opacity: 25%
 }
-video{
-	width:90vw; 
-	z-index: -1;
-	position:absolute;
-	top:0;
-	left:90vw;
+a{
 }
+.bg-image{
+}
+.wrapper{
+	width:100%;
+}
+#section1{
+	height:800px;
+	background-color: black;
+}
+#section2{
+	height:800px;
+	background-color: black;
+}
+.section-content{
+	width:70%;
+	margin: auto;
+	padding-top:250px;
+	text-align: center;
+}
+.video{
+	margin-top:15px;
+	width:100%;
+}
+.signature{
+	padding-top:100px;
+}
+.signature p{
+	font-size:12px;
+}
+.icon-wrapper{
+	display:none;
+	}
 h1{
-	display: block;
 	font-family: 'Martel', serif;
-	font-size: 60px;
-	color:white;
-	letter-spacing: 20px;
+	font-size: 30px;
+	letter-spacing: 10px;
 	font-weight: 200;
-	margin-top:40vh;
-	margin-left:2vw;
 }
 p {
-	display: block;
 	font-family: 'Open Sans', serif;
 	font-size: 15px;
-	color:white;
-	letter-spacing: 1px;
-	margin-top:-5vh;
-	margin-left:2vw;
+	letter-spacing: 2px;
 	font-weight: 300;
-	width:50%;
 }
-#play{
-	display: block;
-	font-family: 'Open Sans', serif;
-	font-size: 15px;
-	color:white;
-	letter-spacing: 1px;
-	margin-top:-5vh;
-	margin-left:2vw;
-	font-weight: 300;
+
+
+@media only screen and (min-width:980px){
+	#section1{
+	height:100vh;
+	background-color: transparent;
+	}
+	#section2{
+	height:100vh;
+	background-color: transparent;
+	}
+	.section-content {
 	width:50%;
+	padding-top:300px;
+	}
+	#content2{
+	padding-top:100px;
+	}
+	.signature{
+	padding-top:200px;
+	}
+	.signature p{
+	font-size:12px;
+}
+	h1{
+	font-size: 50px;
+	letter-spacing: 20px;
+	}
+	.icon-wrapper{
+		display: block;
+		width:200px;
+		height:30px;
+		margin:20px auto 0;
+	}
+	.icon{
+		width:100px;
+		height:100%;
+		padding:0 20px 0;
+	}
+	
+	.icon-img{
+		width:15px;
+		height:15px;
+	}
 }

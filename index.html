@@ -4,35 +4,37 @@
 <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
   	<script src="particle.js"></script>
-  	<script src="vectorfield.js"></script>
   	<script src="sketch.js"></script>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link href="https://fonts.googleapis.com/css?family=Martel:200|Open+Sans:300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
- <div style="width:180vw;height:100vh;position:relative;" id='container' >
-
-	<div style="width:50%;position:relative;" id="section1" >
-		<img src ="bg.png" style = "position:absolute;opacity:40%; width:90vw;">
-		<div style="width:90%;display:block">
-			<h1>FLOWORLD</h1>
-			<p>Following a digital score played live to bring dancers and digital objects together, this performance is a journey fraught with imaginary and poetic pitfalls.</p>
-		</div>
-		<div id="button" style="z-index: 20;">
-			<a href="#section1" style="width:100%;">
-			</a>
+ <div class='wrapper' >
+	<div id="section1" >
+		<div class="section-content">
+			<div class="title">
+				<h1>FLOWORLD</h1>
+				<p>Following a digital score played live to bring dancers and digital objects together, this performance is a journey fraught with imaginary and poetic pitfalls.</p>
+			</div>
+			<div class="signature">
+				<p>digital installation</p>
+				<p>nhan le</p>
+				<div class="icon-wrapper">
+				<a href="mailto:nhant.le@hotmail.com" class="icon"><img src="mail-icon.png" class="icon-img"></img></a>
+				<a href="https://www.instagram.com/nhan__bread/" class="icon"><img src="insta-icon.png" class="icon-img"></img></a>
+				<a href="https://www.behance.net/NhanTLe" class="icon"><img src="behance-icon.png" class="icon-img"></img></a>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div id="section2" style="width:50%;background-image:url('GoldRoom.png');background-size: 100% 100%" >	
-		<!-- <video muted loop controls src="videosample.mp4" id="myVideo"></video>	 -->
-		<div id="button">
-			<a href="#section2" style="width:100%;"></a>
-		</div>
 
-		<div style="width:90%;display:block" >
+	<div id="section2">	
+		<div class="section-content" id="content2" >
 			<h1>CINEMATICS</h1>
-			<p>Afloat a raft on virtual waves or on a wild chase, the voyage will take audiences through virtual worlds and landscapes.</p>
+			<p>Afloat a raft on virtual waves or on a wild  chase, the voyage will take audiences through virtual worlds and landscapes.</p>
+			<video muted loop controls src="videosample.mp4" class="video"></video>
 		</div>
 	</div>
 </div>
