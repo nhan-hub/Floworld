@@ -1,4 +1,4 @@
-var particleNum = 1;
+var particleNum = 2000;
 var particles = [];
 var flowfield;
 var canvas;
