@@ -1,4 +1,4 @@
-var nodeNum = 3000;
+var nodeNum = 2000;
 var nodes = [];
 var canvas;
 var spd = 1;
@@ -34,7 +34,7 @@ function Node() {
     this.r = 1;
     this.dx = random(-2, 2); // direction of x
     this.dy = random(-1, 1); // direction of y;
-  
+
 
     this.update = function() {
         //movement
@@ -54,4 +54,4 @@ function Node() {
         point(this.x, this.y);
         pop();
     }
-} 
+}

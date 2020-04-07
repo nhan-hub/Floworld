@@ -4,6 +4,7 @@
 <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
   	<script src="particle.js"></script>
+    <script src="nav.js"></script>
   	<script src="sketch.js"></script>
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link href="https://fonts.googleapis.com/css?family=Martel:200|Open+Sans:300&display=swap" rel="stylesheet">
@@ -11,32 +12,36 @@
 </head>
 <body>
  <div class='wrapper' >
+  <a type="button" class="toggle-button" onclick="myFunction()"></a>
 	<div id="section1" >
+    <nav class="nav-bar" id="overlay">
+      <ul>
+        <li><a href="index.html" class="nav-item">HOME</a></li>
+        <li><a href="artist.html"class="nav-item">ARTIST</a></li>
+        <li><a href="about.html" class="nav-item" >ABOUT</a></li>
+      </ul>
+    </nav>
 		<div class="section-content">
 			<div class="title">
 				<h1>FLOWORLD</h1>
 				<p>Following a digital score played live to bring dancers and digital objects together, this performance is a journey fraught with imaginary and poetic pitfalls.</p>
 			</div>
+			<a href="reel.html" class="see-now">SEE NOW</a>
 			<div class="signature">
 				<p>digital installation</p>
 				<p>nhan le</p>
-				<div class="icon-wrapper">
-				<a href="mailto:nhant.le@hotmail.com" class="icon"><img src="mail-icon.png" class="icon-img"></img></a>
-				<a href="https://www.instagram.com/nhan__bread/" class="icon"><img src="insta-icon.png" class="icon-img"></img></a>
-				<a href="https://www.behance.net/NhanTLe" class="icon"><img src="behance-icon.png" class="icon-img"></img></a>
-				</div>
 			</div>
 		</div>
 	</div>
 
 
-	<div id="section2">	
+	<!-- <div id="section2">
 		<div class="section-content" id="content2" >
-			<h1>CINEMATICS</h1>
+			<h1>REEL</h1>
 			<p>Afloat a raft on virtual waves or on a wild  chase, the voyage will take audiences through virtual worlds and landscapes.</p>
 			<video muted loop controls src="videosample.mp4" class="video"></video>
 		</div>
-	</div>
+	</div> -->
 </div>
 
 </body>
