@@ -53,11 +53,10 @@ a{
 	height:400px;
 }
 .video{
-	width:150%;
-	height:80%;
 	position: absolute;
-	left:-25%;
-	top:10%;
+	transform:translate(-50%,0);
+	width:140%;
+	height:90%;
 }
 .title{
 	margin-top:50px
@@ -76,6 +75,14 @@ a{
 	font-weight: 400;
 	width:200px;
 	padding:4px;
+	}
+	.see-now:hover{
+		color:black;
+		border-color:white;
+		background-color: white;
+		font-weight:800;
+		transform-origin:center;
+		transform:scale(1.05);
 	}
 .signature{
 	padding-top:5vh;
@@ -157,6 +164,7 @@ nav li a{
 		height:50px;
 		width:600px;
 		margin: 0 auto;
+		background-color:transparent;
 
 	}
 	nav ul{
@@ -172,6 +180,11 @@ nav li a{
 	nav ul li a{
 		font-size:9px;
 	}
+	nav ul li a:hover{
+		transform-origin: center;
+		transform: scale(1.20);
+		font-weight: 800;
+	}
 
 	.toggle-button{
 		display:none;
@@ -186,14 +199,11 @@ nav li a{
 		height:120%;
 	}
 	.video{
-		width:150%;
-		height:200%;
-		position: absolute;
-		left:-25%;
-		top:-50%;
+		height:140%;
+		transform:translate(-50%,-25%)
 	}
 	.see-now{
-		width: 200px;
+		width: 250px;
 	}
 	.signature{
 	}
