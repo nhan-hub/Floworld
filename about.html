@@ -7,14 +7,13 @@
   <script src="nav.js"></script>
   <script src="sketch.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Martel:200|Open+Sans:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Martel:200|Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class='wrapper' >
-    <a href="index.html" class="nav-home">FLOWWORLD</a>
-    <a type="button" class="toggle-button" onclick="myFunction()"></a>
-    <div id="section-about" >
+    <a type="button" class="toggle-button" onclick="navToggle()"></a>
+    <div>
       <nav class="nav-bar" id="overlay">
         <ul>
           <li><a href="index.html" class="nav-item">HOME</a></li>
@@ -22,19 +21,21 @@
           <li><a href="about.html" class="nav-item" >ABOUT</a></li>
         </ul>
       </nav>
-      <div class="section-content">
+      <div class="section-content" id="section-about">
         <div>
           <h1>ABOUT</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc turpis, molestie ut fringilla sed, consectetur id lectus. In nec justo a enim porttitor eleifend nec in tortor. Suspendisse aliquet, lorem semper consequat ultrices, ligula mi consectetur velit, nec porttitor sapien libero in sapien. Nulla tempus nisl eget rhoncus semper. In hac habitasse platea dictumst. Maecenas semper nisl nec felis lobortis suscipit. Etiam et fermentum mi. Pellentesque ut consequat ex. Proin eu sodales lacus, a elementum elit.
+          <br><p>
+            The world is becoming more and more reliant to digital media and services. Business, social interactions , and entertainment has relied more technology than it had 20 years ago. Social behaviour turning virtual; inciting competition between others for "likes" and the most views on posts instead of experiencing life normally. Can we overcome this digital overload? Or can we adapt and address it?
             <br><br>
-            Mauris diam metus, fermentum non turpis sed, eleifend lacinia tellus. Mauris lacinia, quam ut semper placerat, mi libero dapibus purus, eu dictum justo magna a quam. Donec accumsan mi et enim scelerisque, ac dignissim nulla semper. In id ex pharetra, suscipit magna nec, placerat felis. Donec nec mi ligula. Fusce blandit arcu eu enim rhoncus, vitae elementum turpis laoreet. Morbi facilisis leo felis, sed convallis eros malesuada vel. Etiam auctor ex odio, ut sodales odio auctor non.
+            FloWorld is a light installation that creates a meditative environement for the user. Composed of particles that react to user movement and organic noise, the lights dances along with you in an emersive collaboration of peace and joy.The installation is powered by Processing and uses OpenCV computer vision technology. Particle objects follow an organic noise vector field and will react to movement from the camera image.
             <br><br>
-            Duis ac massa metus. Nam accumsan, lorem a sagittis maximus, turpis lacus varius elit, quis efficitur neque diam id dolor. Morbi malesuada, tellus eget interdum posuere, ante velit tempor tortor, a dapibus ante elit in ante. Phasellus tristique lacinia suscipit. Proin sed purus nisl. In nulla massa, facilisis sed velit in, faucibus commodo nunc. Donec fermentum leo a justo consequat efficitur sed id ligula. Suspendisse potenti.
+            <div class="image-proto">
+              <img src="images/GoldRoom.png"></img>
+              <img src="images/AlgaeRoom.png"></img>
+              <img src="images/RedRoom.png"></img>
+            </div>
             <br><br>
-            Quisque enim magna, ornare ornare facilisis et, ultricies sit amet dui. Pellentesque non massa tincidunt, commodo mi nec, sagittis mauris. Suspendisse convallis risus viverra, iaculis tellus nec, tincidunt erat. Mauris eget diam nec nulla egestas dignissim. Nulla eget justo quam. Quisque vel bibendum orci. Quisque orci enim, viverra at semper nec, cursus sed elit. Etiam tempor libero vitae est fringilla sodales ac at velit. Morbi at porttitor leo, vitae malesuada urna. Etiam tristique a purus sed eleifend. Mauris nisi libero, dignissim volutpat ante nec, accumsan pharetra arcu. Duis nec libero orci. Vivamus sagittis magna pretium, consequat leo in, pharetra quam. Suspendisse vehicula erat odio, a vehicula nisi fermentum at. Suspendisse fermentum leo quis leo dapibus ornare. Curabitur sed lectus semper mauris malesuada venenatis.
-            <br><br>
-            Aenean scelerisque, est nec euismod congue, erat massa tincidunt augue, vitae malesuada nunc lacus non quam. Phasellus egestas ac lorem vitae sollicitudin. Suspendisse potenti. Phasellus posuere ullamcorper iaculis. Mauris id massa luctus, imperdiet urna ut, convallis ligula. Nam condimentum ligula non rhoncus eleifend. Vestibulum iaculis ornare dui vestibulum congue. Vivamus id convallis est.</p>
+
           </div>
 
 

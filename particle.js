@@ -1,11 +1,13 @@
+var colorSet = Math.random()*300;
+
 function Particle() {
 
     this.pos = createVector(random(width), random(height));
     this.vel = createVector(0, 0);
     this.acc = createVector(0, 0);
     this.prevPos = this.pos.copy();
-    this.r = random(1, 2); // Particle size
-    this.c = random(150,180);
+    // this.c = random(150,180);
+    this.c = colorSet + random(30);
     this.color = color(this.c,255,255);
 
   this.display=function() {

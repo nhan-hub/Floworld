@@ -4,6 +4,7 @@ var flowfield;
 var canvas;
 var res = 12;
 
+
 function setup() {
   canvas = createCanvas(windowWidth , windowHeight ,P2D);
   canvas.style("position:fixed")
@@ -27,9 +28,4 @@ function draw() {
   for (var i = 0; i < particles.length; i++) {
     particles[i].run();
   }
-}
-
-function mousePressed(){
-  particles[i].explosion();
-  console.log("hello");
 }

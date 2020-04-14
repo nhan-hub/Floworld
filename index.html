@@ -2,44 +2,43 @@
 <html>
 <title>FloWorld</title>
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
-  	<script src="particle.js"></script>
-    <script src="nav.js"></script>
-  	<script src="sketch.js"></script>
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<link href="https://fonts.googleapis.com/css?family=Martel:200|Open+Sans:wght@400;800&display=swap" rel="stylesheet">
-  	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+  <script src="particle.js"></script>
+  <script src="nav.js"></script>
+  <script src="sketch.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Martel:200|Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
- <div class='home-wrapper' >
-  <a type="button" class="toggle-button" onclick="myFunction()"></a>
-	<div id="section1" >
-    <nav class="nav-bar" id="overlay">
-      <ul>
-        <li><a href="index.html" class="nav-item">HOME</a></li>
-        <li><a href="artist.html"class="nav-item">ARTIST</a></li>
-        <li><a href="about.html" class="nav-item" >ABOUT</a></li>
-      </ul>
-    </nav>
-		<div class="section-content">
-			<div class="title">
-				<h1>FLOWORLD</h1>
-				<p>Following a digital score played live to bring dancers and digital objects together, this performance is a journey fraught with imaginary and poetic pitfalls.</p>
-			</div>
-			<a href="#section2" class="see-now">WATCH TRAILER</a>
-			<div class="signature">
-				<p>digital installation</p>
-				<p>nhan le</p>
-			</div>
-		</div>
-	</div>
+  <div class='home-wrapper' >
+    <a type="button" class="toggle-button" onclick="navToggle()"></a>
+    <div  >
+      <nav class="nav-bar" id="overlay">
+        <ul>
+          <li><a href="index.html" class="nav-item">HOME</a></li>
+          <li><a href="artist.html"class="nav-item">ARTIST</a></li>
+          <li><a href="about.html" class="nav-item" >ABOUT</a></li>
+        </ul>
+      </nav>
+      <div class="section-content" id="section-home">
+        <div class="title">
+          <h1>FLOWORLD</h1>
+          <p>Following a digital score played live to bring dancers and digital objects together, this performance is a journey fraught with imaginary and poetic pitfalls.</p>
+        </div>
+        <a type="button" class="see-now" onclick="trailerToggle()">WATCH TRAILER</a>
+        <div class="signature">
+          <p>digital installation</p>
+          <p>nhan le</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<div id="section2">
-		<div class="section-content" >
-			<iframe class="video" src="https://www.youtube.com/embed/lA3lF98upfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	</div>
-</div>
+  <div class="trailer" id="trailer">
+    <a type="button" class="trailer-button" onclick="trailerToggle();stopVideo()"></a>
+    <iframe class="frame" id="video" src="https://www.youtube.com/embed/c9ks0fyA4hA"  allowfullscreen></iframe>
+  </div>
 
 </body>
 </html>
