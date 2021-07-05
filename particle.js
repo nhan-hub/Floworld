@@ -14,7 +14,7 @@ function Particle() {
     push();
     translate(width, 0);
     scale(-1, 1);
-    strokeWeight(1);
+    strokeWeight(3);
     stroke(this.color);
     point(this.pos.x,this.pos.y);
     this.updatePreviousPos();
